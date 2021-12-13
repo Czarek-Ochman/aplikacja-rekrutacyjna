@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Cezary Ochman zadanie rekrutacyjne</div></br>
+        <form action="#" onSubmit="return chceckForm();">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Imie</span></br>
+                    <input type="text" id="name" placeholder="Wprowadź swoje imie" maxlength="30" required>
+                </div>
+                <div class="input-box">
+                    <span class="details">Numer telefonu</span></br>
+                    <input type="tel" id="phoneNumber" pattern="[0-9]{9}" placeholder="888888888" maxlength="9"
+                        required>
+                </div>
+            </div>
+            <div class="genderDetails">
+                <span class="genderTitle">Wybierz płeć:</span>
+                <div>
+                    <input type="radio" id="woman" name="gender" value="woman">
+                    <label for="woman">Kobieta</label>
+                </div>
+                <div>
+                    <input type="radio" id="man" name="gender" value="man">
+                    <label for="man">Mężczyzna</label>
+                </div>
+            </div>
+            <div class="button">
+                <input type="submit" id="button" value="Wyślij">
+            </div>
+            <div class="text">
+                <p id=result></p>
+                <p id="resultName"></p>
+                <p id="resultPhone"></p>
+                <p id="resultFormatPhone"></p>
+                <p id="resultGender"></p>
+            </div>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
